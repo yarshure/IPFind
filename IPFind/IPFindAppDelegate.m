@@ -7,10 +7,72 @@
 //
 
 #import "IPFindAppDelegate.h"
-
+#import "IPSearch.h"
 @implementation IPFindAppDelegate
 
 @synthesize window = _window;
+@synthesize area = _area;
+@synthesize ip = _ip;
+#pragma func
+//This method is invoked when the Hello button or return key is touched
+- (void)hello:(id)sender
+{
+    [self.ip resignFirstResponder];
+    NSString *nameString = self.ip.text;
+	IPAddress * myIPAddress=[IPAddress ipaddress];
+    if ([nameString length] == 0) {    //Nothing was typed
+        //nameString = @"202.199.96.100";
+		myIPAddress.ipstring=@"202.199.96.100";
+	    NSString *greeting = [NSString stringWithFormat:@"%@",myIPAddress.findlocation ];
+		self.area.text = greeting;
+    } else if([nameString length] >16){
+        
+		NSString *greeting = @"IPaddr is too lang";
+		self.area.text = greeting;
+	} else {
+	    NSArray *iparray=[nameString componentsSeparatedByString:@"."];
+		//NSMutableString *nameStringtmp;
+		if([iparray count] >4){
+	        NSString *greeting = @"IPaddr is not validity";
+			self.area.text = greeting;
+		} else if([iparray count] == 4){
+			myIPAddress.ipstring=nameString;
+			NSString *greeting = [NSString stringWithFormat:@"%@",myIPAddress.findlocation ];
+			self.area.text = greeting;
+		} else if([iparray count]==3) {
+		    myIPAddress.ipstring=[NSString stringWithFormat:@"%@.0",nameString];
+		    NSString *greeting = [NSString stringWithFormat:@"%@",myIPAddress.findlocation ];
+			self.area.text = greeting;
+		} else if([iparray count]==2) {
+			myIPAddress.ipstring=[NSString stringWithFormat:@"%@.0.0",nameString];
+		    NSString *greeting = [NSString stringWithFormat:@"%@",myIPAddress.findlocation ];
+			self.area.text = greeting;
+		} else {
+			myIPAddress.ipstring=[NSString stringWithFormat:@"%@.0.0.0",nameString];
+		    NSString *greeting = [NSString stringWithFormat:@"%@",myIPAddress.findlocation ];
+			self.area.text = greeting;
+		}
+        
+	}
+    
+	//myIPAddress.ipstring=nameString;
+	//NSString *greeting = [NSString stringWithFormat:@"%@",myIPAddress.findlocation ];
+    
+    //self.label.text = greeting;
+}
+// Do the equivalent of touching the Hello button when return is touched
+- (void)textFieldDidEndEditing:(UITextField *)theTextField
+{
+    [self hello: theTextField];
+}
+
+// Sent when the return key on the keyboard is touched
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField
+{
+    [theTextField resignFirstResponder];
+    return YES;
+}
+#pragma -
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

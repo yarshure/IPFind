@@ -14,6 +14,9 @@
 		3778FE981434563F007C5635 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3778FE971434563F007C5635 /* main.m */; };
 		3778FE9C1434563F007C5635 /* IPFindAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3778FE9B1434563F007C5635 /* IPFindAppDelegate.m */; };
 		3778FE9F1434563F007C5635 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3778FE9D1434563F007C5635 /* MainWindow.xib */; };
+		3778FEA61434565C007C5635 /* QQWry.Dat in Resources */ = {isa = PBXBuildFile; fileRef = 3778FEA51434565C007C5635 /* QQWry.Dat */; };
+		3778FEAB1434566B007C5635 /* IPsearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 3778FEA71434566B007C5635 /* IPsearch.c */; };
+		3778FEAC1434566B007C5635 /* IPSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3778FEA91434566B007C5635 /* IPSearch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +24,18 @@
 		3778FE8B1434563F007C5635 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3778FE8D1434563F007C5635 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3778FE8F1434563F007C5635 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3778FE931434563F007C5635 /* IPFind-Info.plist */ = {isa = PBXFileReference; path = "IPFind-Info.plist"; sourceTree = "<group>"; };
+		3778FE931434563F007C5635 /* IPFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IPFind-Info.plist"; sourceTree = "<group>"; };
 		3778FE951434563F007C5635 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3778FE971434563F007C5635 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3778FE991434563F007C5635 /* IPFind-Prefix.pch */ = {isa = PBXFileReference; path = "IPFind-Prefix.pch"; sourceTree = "<group>"; };
-		3778FE9A1434563F007C5635 /* IPFindAppDelegate.h */ = {isa = PBXFileReference; path = IPFindAppDelegate.h; sourceTree = "<group>"; };
+		3778FE991434563F007C5635 /* IPFind-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IPFind-Prefix.pch"; sourceTree = "<group>"; };
+		3778FE9A1434563F007C5635 /* IPFindAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPFindAppDelegate.h; sourceTree = "<group>"; };
 		3778FE9B1434563F007C5635 /* IPFindAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPFindAppDelegate.m; sourceTree = "<group>"; };
 		3778FE9E1434563F007C5635 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		3778FEA51434565C007C5635 /* QQWry.Dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = QQWry.Dat; sourceTree = "<group>"; };
+		3778FEA71434566B007C5635 /* IPsearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IPsearch.c; sourceTree = "<group>"; };
+		3778FEA81434566B007C5635 /* IPSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSearch.h; sourceTree = "<group>"; };
+		3778FEA91434566B007C5635 /* IPSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSearch.m; sourceTree = "<group>"; };
+		3778FEAA1434566B007C5635 /* IPsearchc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPsearchc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,10 @@
 		3778FE911434563F007C5635 /* IPFind */ = {
 			isa = PBXGroup;
 			children = (
+				3778FEA71434566B007C5635 /* IPsearch.c */,
+				3778FEA81434566B007C5635 /* IPSearch.h */,
+				3778FEA91434566B007C5635 /* IPSearch.m */,
+				3778FEAA1434566B007C5635 /* IPsearchc.h */,
 				3778FE9A1434563F007C5635 /* IPFindAppDelegate.h */,
 				3778FE9B1434563F007C5635 /* IPFindAppDelegate.m */,
 				3778FE9D1434563F007C5635 /* MainWindow.xib */,
@@ -85,6 +97,7 @@
 		3778FE921434563F007C5635 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3778FEA51434565C007C5635 /* QQWry.Dat */,
 				3778FE931434563F007C5635 /* IPFind-Info.plist */,
 				3778FE941434563F007C5635 /* InfoPlist.strings */,
 				3778FE971434563F007C5635 /* main.m */,
@@ -145,6 +158,7 @@
 			files = (
 				3778FE961434563F007C5635 /* InfoPlist.strings in Resources */,
 				3778FE9F1434563F007C5635 /* MainWindow.xib in Resources */,
+				3778FEA61434565C007C5635 /* QQWry.Dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +171,8 @@
 			files = (
 				3778FE981434563F007C5635 /* main.m in Sources */,
 				3778FE9C1434563F007C5635 /* IPFindAppDelegate.m in Sources */,
+				3778FEAB1434566B007C5635 /* IPsearch.c in Sources */,
+				3778FEAC1434566B007C5635 /* IPSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

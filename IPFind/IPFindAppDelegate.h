@@ -11,5 +11,7 @@
 @interface IPFindAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
+@property (nonatomic, retain) IBOutlet UITextField *ip;
+@property (nonatomic, retain) IBOutlet UILabel *area;
+- (IBAction)hello:(id)sender;
 @end
