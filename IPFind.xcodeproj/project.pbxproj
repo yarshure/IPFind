@@ -36,6 +36,7 @@
 		3778FEA81434566B007C5635 /* IPSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSearch.h; sourceTree = "<group>"; };
 		3778FEA91434566B007C5635 /* IPSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSearch.m; sourceTree = "<group>"; };
 		3778FEAA1434566B007C5635 /* IPsearchc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPsearchc.h; sourceTree = "<group>"; };
+		69CEFA821671E7FB007CE87A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		3778FE7C1434563F007C5635 = {
 			isa = PBXGroup;
 			children = (
+				69CEFA821671E7FB007CE87A /* README.md */,
 				3778FE911434563F007C5635 /* IPFind */,
 				3778FE8A1434563F007C5635 /* Frameworks */,
 				3778FE881434563F007C5635 /* Products */,
@@ -282,6 +284,7 @@
 				3778FEA41434563F007C5635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
